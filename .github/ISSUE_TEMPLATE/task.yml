@@ -1,0 +1,25 @@
+name: Tracker task
+description: Track a focused follow-up or maintenance task.
+body:
+- type: textarea
+  id: goal
+  attributes:
+    label: Goal
+    description: Describe the concrete result needed.
+  validations:
+    required: true
+- type: textarea
+  id: scope
+  attributes:
+    label: Scope
+    description: Name the affected feature and relevant reports.
+  validations:
+    required: true
+- type: textarea
+  id: done
+  attributes:
+    label: Completion criteria
+    description: Describe how a reviewer can tell that the task is complete.
+  validations:
+    required: true
+type: Task
